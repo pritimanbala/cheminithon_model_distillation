@@ -1,0 +1,11 @@
+{
+  "synthetic": true,
+  "feasible_pareto_solutions": 25,
+  "minimum_energy": 4398.603057908278,
+  "maximum_throughput": 93.69169545572332,
+  "minimum_operating_cost": 216.85510497925605,
+  "class_A": 160,
+  "class_C": 4,
+  "promising_infeasible": 0,
+  "directed_corrections": 0
+}

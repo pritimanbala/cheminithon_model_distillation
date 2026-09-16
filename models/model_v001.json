@@ -1,0 +1,21 @@
+{
+  "dataset_version": "synthetic_5000",
+  "features": [
+    "feed_MeOH",
+    "feed_EtAC",
+    "feed_Water",
+    "feed_flow",
+    "feed_pressure",
+    "feed_temperature",
+    "reflux_ratio",
+    "reboiler_duty",
+    "condenser_duty",
+    "feed_stage_location",
+    "column_pressure",
+    "feed_flow_rate"
+  ],
+  "model_type": "RandomForestRegressor",
+  "training_sample_count": 4628,
+  "validation_metrics": "not calculated in prototype script",
+  "synthetic": true
+}

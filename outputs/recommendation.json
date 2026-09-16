@@ -1,0 +1,14 @@
+{
+  "status": "REQUIRES VALIDATION",
+  "label": "TOPSIS-selected balanced Pareto operating point",
+  "synthetic": true,
+  "decision_variables": {
+    "reflux_ratio": 4.010161169604444,
+    "reboiler_duty": 2352.519068123508,
+    "condenser_duty": 1888.4114601385538,
+    "feed_stage_location": 21.0,
+    "column_pressure": 1.1342260495698855,
+    "feed_flow_rate": 122.3679776785725
+  },
+  "model_confidence_note": "Synthetic simulator only; operator approval required"
+}

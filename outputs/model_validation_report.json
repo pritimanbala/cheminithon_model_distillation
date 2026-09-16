@@ -1,0 +1,11 @@
+{
+  "synthetic": true,
+  "status": "NOT A PLANT-VALIDATED MODEL",
+  "gp_classifier_metrics": {
+    "accuracy": 0.8888888888888888,
+    "precision": 0.8846153846153846,
+    "recall": 0.92,
+    "f1": 0.9019607843137255,
+    "roc_auc": 0.988
+  }
+}

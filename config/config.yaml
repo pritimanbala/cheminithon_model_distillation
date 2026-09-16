@@ -1,0 +1,32 @@
+mode: adaptive_operational
+seed: 42
+population_size: 48
+generations: 12
+gp_probability_threshold: 0.5
+# Synthetic/default prototype bounds — not extracted from the paper (TODO: replace with Table S5).
+variables:
+  reflux_ratio: {lower: 0.2, upper: 6.0, kind: continuous}
+  reboiler_duty: {lower: 400, upper: 3500, kind: continuous}
+  condenser_duty: {lower: 300, upper: 3000, kind: continuous}
+  feed_stage_location: {lower: 3, upper: 35, kind: integer}
+  column_pressure: {lower: 0.6, upper: 3.0, kind: continuous}
+  feed_flow_rate: {lower: 40, upper: 180, kind: continuous}
+paper_variables:
+  N_TPC: {lower: 4, upper: 12, kind: integer}
+  N_FPC: {lower: 2, upper: 10, kind: integer}
+  N_TEDC: {lower: 20, upper: 55, kind: integer}
+  N_FEDC: {lower: 4, upper: 50, kind: integer}
+  N_EEDC: {lower: 2, upper: 30, kind: integer}
+  F_EDC: {lower: 5, upper: 50, kind: continuous}
+  RR_EDC: {lower: 0.1, upper: 4.0, kind: continuous}
+  N_TPDC: {lower: 10, upper: 35, kind: integer}
+  N_FPDC: {lower: 2, upper: 30, kind: integer}
+  RR_PDC: {lower: 0.1, upper: 6.0, kind: continuous}
+  N_TSRC: {lower: 8, upper: 28, kind: integer}
+  N_FSRC: {lower: 2, upper: 24, kind: integer}
+  RR_SRC: {lower: 0.05, upper: 3.0, kind: continuous}
+# Prototype synthetic targets, not universal plant specifications.
+purity_targets: {MeOH: 0.90, EtAC: 0.90}
+recovery_targets: {MeOH: 0.80, EtAC: 0.80}
+operating_weights: {energy: 0.20, purity_loss: 0.20, recovery_loss: 0.20, negative_throughput: 0.20, operating_cost: 0.20}
+retraining: {retrain_every_n_new_records: 100, feed_shift_threshold: 0.20}
